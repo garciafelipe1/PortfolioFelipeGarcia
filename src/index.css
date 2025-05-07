@@ -470,3 +470,6 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+h1 {
+  font-weight: 750; /* Equivalente a bold */
+}

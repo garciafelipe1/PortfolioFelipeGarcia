@@ -1,5 +1,4 @@
 import React from "react";
-import { words } from "../constants";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import gsap from "gsap";
@@ -23,58 +22,81 @@ const Hero = () => {
     })
   })
    return (
-     <section id="hero" className="relative overflow-hidden">
-       <div className="absolute top-0 left-0 z-10">
-         <img src="/images/bg.png" alt="" />
-       </div>
-
-       <div className="hero-layout">
+     <section id="hero" className="relative overflow-hidden  bg-[#0e1036]">
+       <div className="hero-layout  ">
          {/* LEFT: Hero Content */}
-         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+         <header className="flex flex-col justify-center md:w-full  mb-64 section py-16 md:py-12 scroll-m-10 w-full mx-auto container lg:max-w-5xl md:max-w-2xl ">
            <div className="flex flex-col gap-7">
-             <div className="hero-text">
-               <h1>
-                 Shaping
-                 <span className="slide">
-                   <span className="wrapper">
-                     {words.map((word, index) => (
-                       <span
-                         key={index}
-                         className="flex items-center md:gap-3 gap-1 pb-2"
-                       >
-                         <img
-                           src={word.imgPath}
-                           alt="person"
-                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                         />
-                         <span>{word.text}</span>
-                       </span>
-                     ))}
-                   </span>
-                 </span>
+             <div className="hero-text  ">
+               <h1 className="font-sans-serif font-weight: bold ">
+                 Hey, I'm Felipe Garcia
                </h1>
-               <h1>into Real Projects</h1>
-               <h1>that Deliver Results</h1>
              </div>
-
-             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-               Hi, I’m Felipe Garcia, a developer based in Argentina with a
-               passion for code.
+             <p className=" [&>strong]:text-yellow-200  text-white-50 md:text-xl relative z-10 pointer-events-none font-sans-serif">
+               <strong> Sofware Developer</strong>
+               <p>Graduate in Technician programming.</p>
              </p>
-
-             <Button
-               text="My Work"
-               className="md:w-80 md:h-16 w-60 h-12"
-               id="counter"
-             />
+             <nav className="flex gap-4">
+               <a
+                 target="_blank"
+                 href="https://www.linkedin.com/in/garciafelipe1/"
+                 role="link"
+                 class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+               >
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   class="icon icon-tabler icon-tabler-brand-linkedin"
+                   width="24"
+                   height="24"
+                   viewBox="0 0 24 24"
+                   stroke-width="2"
+                   stroke="currentColor"
+                   fill="none"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 >
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                   <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                   <path d="M8 11l0 5" />
+                   <path d="M8 8l0 .01" />
+                   <path d="M12 16l0 -5" />
+                   <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                 </svg>
+                 Linkedin
+               </a>
+               <a
+                 target="_blank"
+                 href="mailto:feli2003garcia@gmail.com"
+                 role="link"
+                 class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+               >
+                 <svg
+                   
+                   xmlns="http://www.w3.org/2000/svg"
+                   class="icon icon-tabler icon-tabler-mail-forward"
+                   width="24"
+                   height="24"
+                   viewBox="0 0 24 24"
+                   stroke-width="2"
+                   stroke="currentColor"
+                   fill="none"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 >
+                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                   <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+                   <path d="M3 6l9 6l9 -6" />
+                   <path d="M15 18h6" />
+                   <path d="M18 15l3 3l-3 3" />
+                 </svg>
+                 Contactame!
+               </a>
+             </nav>
            </div>
          </header>
 
-
          <figure>
-           <div className="hero-3d-layout border-red-200 ">
-            <HeroExperience />
-           </div>
+           <div className="hero-3d-layout border-red-200  "></div>
          </figure>
        </div>
        <AnimatedCounter />
