@@ -95,7 +95,7 @@ const Experience = () => {
       className="flex-center mt-0 section-padding xl:px-0 bg-[#0e1036]  "
     >
       <div className="w-full h-full md:px-20 px-5 ">
-        <TitleHeader title="Professional Work Experience"/>
+        <TitleHeader title="Work Experience"/>
         <div className="mt-10 relative ml-10">
           <div className="relative z-50 xl:space-y-32 space-y-10 ml-30">
             {expCards.map((card) => (

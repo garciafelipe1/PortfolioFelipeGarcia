@@ -24,7 +24,7 @@ const Hero = () => {
      <section id="hero" className="relative overflow-hidden  bg-[#0e1036]">
        <div className="hero-layout  ">
          {/* LEFT: Hero Content */}
-         <header className="flex flex-col justify-center md:w-full   section py-16 md:py-12 scroll-m-10 w-full mx-auto container lg:max-w-5xl md:max-w-2xl ">
+         <header className="flex flex-col justify-center md:w-full  section py-16 md:py-12 scroll-m-10 w-full mx-auto container lg:max-w-5xl md:max-w-2xl ">
            <div className="flex flex-col gap-7">
              <div className="hero-text  ">
                <div class="flex gap-4 mb-4">
