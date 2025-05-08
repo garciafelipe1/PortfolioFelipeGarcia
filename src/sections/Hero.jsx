@@ -1,9 +1,8 @@
 import React from "react";
-import Button from "../components/Button";
-import HeroExperience from "../components/HeroModels/HeroExperience";
 import gsap from "gsap";
 import {useGSAP} from '@gsap/react'
 import AnimatedCounter from "../components/HeroModels/AnimatedCounter";
+import BotonWork from "../components/BotonWork/BotonWork";
 
 
 const Hero = () => {
@@ -25,11 +24,21 @@ const Hero = () => {
      <section id="hero" className="relative overflow-hidden  bg-[#0e1036]">
        <div className="hero-layout  ">
          {/* LEFT: Hero Content */}
-         <header className="flex flex-col justify-center md:w-full  mb-64 section py-16 md:py-12 scroll-m-10 w-full mx-auto container lg:max-w-5xl md:max-w-2xl ">
+         <header className="flex flex-col justify-center md:w-full   section py-16 md:py-12 scroll-m-10 w-full mx-auto container lg:max-w-5xl md:max-w-2xl ">
            <div className="flex flex-col gap-7">
              <div className="hero-text  ">
+               <div class="flex gap-4 mb-4">
+                 <img
+                   class="rounded-full shadow-lg size-38"
+                   src="images/FelipeGarcia.jpg"
+                   alt="Felipe Garcia"
+                 />
+                 <BotonWork/>
+                
+                 
+               </div>
                <h1 className="font-sans-serif font-weight: bold ">
-                 Hey, I'm Felipe Garcia
+                 Hey, I'm Felipe Garcia!
                </h1>
              </div>
              <p className=" [&>strong]:text-yellow-200  text-white-50 md:text-xl relative z-10 pointer-events-none font-sans-serif">
@@ -71,7 +80,6 @@ const Hero = () => {
                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                >
                  <svg
-                   
                    xmlns="http://www.w3.org/2000/svg"
                    class="icon icon-tabler icon-tabler-mail-forward"
                    width="24"
@@ -99,7 +107,7 @@ const Hero = () => {
            <div className="hero-3d-layout border-red-200  "></div>
          </figure>
        </div>
-       <AnimatedCounter />
+       
      </section>
    );
 };

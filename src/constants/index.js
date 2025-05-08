@@ -16,6 +16,10 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
   
 ];
 

@@ -243,7 +243,7 @@ section {
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-40 bg-[#0e1036];
   }
 
   .timeline-logo {
@@ -373,6 +373,7 @@ section {
     #52aeff 37.51%,
     #fd5c79 62.83%,
     #6d45ce 92.91%
+    
   );
 }
 
