@@ -3,6 +3,7 @@ import gsap from "gsap";
 import {useGSAP} from '@gsap/react'
 import AnimatedCounter from "../components/HeroModels/AnimatedCounter";
 import BotonWork from "../components/BotonWork/BotonWork";
+import HeroExperience from "../components/HeroModels/HeroExperience";
 
 
 const Hero = () => {
@@ -106,6 +107,7 @@ const Hero = () => {
          <figure>
            <div className="hero-3d-layout border-red-200  "></div>
          </figure>
+         
        </div>
        
      </section>
